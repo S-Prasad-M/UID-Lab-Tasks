@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RCB Fanpage</title>
+	<style>
+		body 
+		{
+			background-color: black;
+			color: white;
+		}
+		.container 
+		{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin-top: 20px;
+		}
+		.card 
+		{
+			background-color: red;
+			border: 2px solid black;
+			box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+			margin: 10px;
+			width: 300px;
+			height: 400px;
+			overflow: hidden;
+			position: relative;
+			cursor: pointer;
+		}
+		.card2
+		{
+			background-color: red;
+			border: 2px solid black;
+			box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+			margin: 10px;
+			width: 950px;
+			height: 180px;
+			overflow: hidden;
+			position: relative;
+			cursor: pointer;
+		}
+        .imag
+		{
+            width: 300px;
+            height: 400px;
+        }
+		.card:hover .overlay {
+			opacity: 1;
+		}
+		.card:hover img {
+			transform: scale(1.1);
+		}
+		.overlay {
+			background-color: rgba(0,0,0,0.7);
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			opacity: 0;
+			transition: opacity 0.3s ease-in-out;
+			padding: 20px;
+			box-sizing: border-box;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="color: red; text-align: center; margin-top: 20px;">ROYAL CHALLENGERS BANGALORE</h1>	
+	<div class = "container">
+		<div class="card2">
+			<img src="logo.png" alt="rcb" style="float: left;">
+			<p> Royal Challengers Bangalore, also known as RCB, is the Bengaluru-based cricket franchise of the Indian Premier League (IPL). 
+				The team is owned by United Spirits Limited, a Diageo Group company. <br><br>
+				RCB rose from a bottom-two finish in 2008 to end as runners-up in 2009 and semi-finalists in 2010. 
+				The team had 3 good seasons back-to-back when they made it to the final in 2011. Led by Virat Kohli, 
+				Royal Challengers Bangalore yet again finished 2nd in 2016.<br><br>
+				RCB has adopted the philosophy #PlayBold which resonates both on and off the field 
+				- Defeats don't defeat us, the Challenger Spirit keeps us alive'.
+			</p>
+		</div>
+	</div>
+	<h2 style="color: red; text-align: center;">RCB SQUAD OF 2023</h2>
+	<div class="container">
+		<div class="card" onclick="showOverlay('virat')">
+            <img class="imag" src="VK.png" alt="Virat Kohli">
+			<div class="overlay" id="virat">
+				<h3>Virat Kohli</h3>
+				<p>Born: November 5, 1988</p>
+				<p>Role: Batsman</p>
+				<p>IPL Record: Runs - 6,773, Avg - 37.97, SR - 130.41</p>
+			</div>
+		</div>
+		<div class="card" onclick="showOverlay('faf')">
+            <img class="imag" src="FAF.png" alt="Faf Du Plessis">
+			<div class="overlay" id="faf">
+				<h3>Faf Du Plessis</h3>
+				<p>Born: July 13, 1984</p>
+				<p>Role: Batsman</p>
+				<p>IPL Record: Runs - 3,476, Avg - 34.76, SR - 172.41</p>
+			</div>
+		</div>
+		<div class="card" onclick="showOverlay('maxi')">
+            <img class="imag" src="MAXI.png" alt="Glenn Maxwell">
+			<div class="overlay" id="faf">
+				<h3>Glenn Maxwel</h3>
+				<p>Born: October 14, 1988</p>
+				<p>Role: All Rounders</p>
+				<p>IPL Record: Runs - 2,331, Avg - 25.62, SR - 153.72, Wicket - </p>
+			</div>
+		</div>
+		<div class="card" onclick="showOverlay('anuj')">
+            <img class="imag" src="ANUJ.png" alt="Anuj Rawat">
+            <div class="overlay" id="anuj">
+                <h3>Anuj Rawat</h3>
+                <p>Born: October 17, 1999</p>
+                <p>Role: Wicket Keeper</p>
+                <p>IPL Record: Runs - 129, Avg - 14.33, SR - 118.2</p>
+            </div>
+        </div>
+		<div class="card" onclick="showOverlay('brace')">
+            <img class="imag" src="BRACEWELL.png" alt="Michael Bracewell">
+            <div class="overlay" id="brace">
+                <h3>Michael Bracewell</h3>
+                <p>Born: February 14, 1991</p>
+                <p>Role: Batsman</p>
+                <p>IPL Record: Runs - -, Avg - -, SR - -</p>
+            </div>
+        </div>
+		<div class="card" onclick="showOverlay('dk')">
+            <img class="imag" src="DK.png" alt="Dinesh Karthick">
+            <div class="overlay" id="dk">
+                <h3>Dinesh Karthick</h3>
+                <p>Born: June 1, 1985</p>
+                <p>Role: Wicket Keeper</p>
+                <p>IPL Record: Runs - 4376, Avg - 26.68, SR - 183.33</p>
+            </div>
+        </div>
+		<div class="card" onclick="showOverlay('finn')">
+            <img class="imag" src="FINNALLEN.png" alt="Finn Allen">
+            <div class="overlay" id="finn">
+                <h3>Finn Allen</h3>
+                <p>Born: April 22, 1999</p>
+                <p>Role: Wicket Keeper</p>
+                <p>IPL Record: Runs - 2040, Avg - 29.56, SR - 171.51</p>
+            </div>
+        </div>
+		<div class="card" onclick="showOverlay('haze')">
+            <img class="imag" src="HAZLEWOOD.png" alt="Josh Hazlewood">
+            <div class="overlay" id="haze">
+                <h3>Josh Hazlewood</h3>
+                <p>Born: January 8, 1991</p>
+                <p>Role: Bowler</p>
+                <p>IPL Record: Runs - 18, Avg - 22.94, SR - -</p>
+            </div>
+        </div>
+		<div class="card" onclick="showOverlay('hp')">
+            <img class="imag" src="HP.png" alt="Harshal Patel">
+            <div class="overlay" id="hp">
+                <h3>Harshal Patel</h3>
+                <p>Born: November 23, 1990</p>
+                <p>Role: Bowler</p>
+                <p>IPL Record: Runs - 230, Avg - 23.07, SR - 8.66</p>
+            </div>
+        </div>
+		<div class="card" onclick="showOverlay('pati')">
+            <img class="imag" src="PATIDAR.png" alt="Rajat Patidar">
+            <div class="overlay" id="pati">
+                <h3>Rajat Patidar</h3>
+                <p>Born: June 1, 1993</p>
+                <p>Role: Batsman</p>
+                <p>IPL Record: Runs - 404, Avg - 40.04, SR - 147.33</p>
+            </div>
+        </div>
+		<div class="card" onclick="showOverlay('sha')">
+            <img class="imag" src="SHAHBAZ.png" alt="Shahbaz Ahmed">
+            <div class="overlay" id="sha">
+                <h3>Shahbaz Ahmed</h3>
+                <p>Born: December 12, 1994</p>
+                <p>Role: All Rounder</p>
+                <p>IPL Record: Runs - 279, Avg - 18.06, SR - 111.32</p>
+            </div>
+        </div>
+		<div class="card" onclick="showOverlay('siraj')">
+            <img class="imag" src="SIRAJ.png" alt="Mohammed Siraj">
+            <div class="overlay" id="siraj">
+                <h3>Mohammed Siraj</h3>
+                <p>Born: March 19, 1994</p>
+                <p>Role: Bowler</p>
+                <p>IPL Record: Runs - 96, Avg - 32.87, SR - 57.1</p>
+            </div>
+        </div>
+		<div class="card" onclick="showOverlay('wil')">
+            <img class="imag" src="WILLEY.png" alt="David Willey">
+            <div class="overlay" id="wil">
+                <h3>David Willey</h3>
+                <p>Born: February 28, 1990</p>
+                <p>Role: Bowler</p>
+                <p>IPL Record: Runs - 18, Avg - 9, SR - 66</p>
+            </div>
+        </div>
+	</div>
