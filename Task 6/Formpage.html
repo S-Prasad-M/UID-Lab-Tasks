@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
     <style>
-        body
-        {
-           background-image: linear-gradient(to top, rgb(68, 245, 68), rgb(69, 157, 238), black);
-           background-attachment: fixed;
-           background-size: 100% 100%; 
+        body{
+            background-image: linear-gradient(to bottom, rgb(68, 245, 68), rgb(69, 157, 238), black);
+            background-attachment: fixed;
         }
     </style>
-    <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORM</title>
-    </head>
-    <body>
+<body>
+    <form id="registration" target="_blank"  style = "align-items: center;">
         <center>
         <br>
-        <form id="registration" target="_blank"  style = "align-items: center;">
-            <p>First Name: <input type="text" class="fn" placeholder="Ur first name "></p>
-            <p>Last Name: <input type="text" class="ln" placeholder="Ur last name "></p>
-            <p>Email: <input type="email" class="email" placeholder="Ur email address "></p>
-            <p>Mobile: <input type="tel" minlength="0" maxlength="10" class="mob" placeholder="Ur mobile number "></p>
+        <table>
+            <tr>
+                <td>First Name: <input type="text" class="fn" placeholder="First name "></td>
+                <td>Last Name: <input type="text" class="ln" placeholder="Last name "></td>
+            </tr>
+        </table>
+            <p>Email : <input type="email" class="email" placeholder="Email"></p>
+            <p> Mobile: <input type="tel" minlength="0" maxlength="10" class="mob" placeholder="Mobile number "></p>
             <p>Gender: <input type="radio" class="male" value="Male" name="Male" placeholder="Male">
                 <label for="male">Male</label> <input type="radio" class="female" value="Female" name="Female" placeholder="Female"> <label for="female">Female</label></p>
             <p>Date of Birth: <input type="date" name="dob" id="dob"></p>
-            <p >Address: <textarea name="add" id="add" cols="30" rows="5" maxlength="70"></textarea></p>
-            <p>City: <input type="text" class="city" maxlength="25"></p>
-            <p>Area PIN CODE: <input type="text" class="pin" maxlength="8"></p>
-            <p>State: <input type="text" class="state" maxlength="25"></p>
+            <table>
+                <tr>
+                    <td>Address: </td>
+                    <td>
+                        <textarea name="add" id="add" cols="50" rows="2" maxlength="70" style="height: 62px; width: 335px;"></textarea>
+                    </tr>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><input type="text" class="city" maxlength="25" placeholder="City"></td>
+                    <td><input type="text" class="pin" maxlength="8"placeholder="Pin code"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="city" maxlength="25" placeholder="State"></td>
+                    <td><input type="text" class="pin" maxlength="8"placeholder="Country"></td>
+                </tr>
+            </table>
             <p>Qualification: <select name="qua" id="qua"><option value="qua">Your Qualification:</option>
                 <option value="cse">Marine Engineering</option>
                 <option value="aero">Back-end Engineering</option>
-                <option value="ee">Electrical Engineering</option>
                 <option value="cys">Front-end Engineering</option>
                 <option value="game">Civil Engineering</option></select></p>
-            <p>Specialization: <input type="checkbox" name="spec" id="spec" aria-checked="false">
-            <label for="cse">Computer science</label>
-                <input type="checkbox" name="spec" id="spec"> <label for="it">Information Technology</label>
-                <input type="checkbox" name="spec" id="spec"> <label for="ca">Computer Architecture</label>
-                <input type="checkbox" name="spec" id="spec"> <label for="tc">Tele Communication</label></p>
+            
+            <table>
+                <th style="background-color:null;">
+                    Specialization: 
+                </th>
+                <tr>
+                    <td><input type="checkbox" name="spec" id="spec"> <label for="it">Information Technology</label></td>
+                    <td><input type="checkbox" name="spec" id="spec"> <label for="ca">Computer Architecture</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="spec" id="spec"> <label for="cse">Computer science</label></td>
+                    <td><input type="checkbox" name="spec" id="spec"> <label for="tc">Tele Communication</label></td>
+                </tr>
+            </table>
+
             <p>Password: <input type="password" name="pass" id="pass"></p>
             <input type="submit" value="Register">
         </form>
+        <br>
+        <br>
+        <br>
+        <a href="Mainpage.html"><button>Return to Homepage</button></a>
     </center>
-    </body>
+</body>
 </html>
