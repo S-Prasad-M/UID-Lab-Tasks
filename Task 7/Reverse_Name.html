@@ -1,0 +1,23 @@
+ <html>
+    <title>Your Sweet Name?</title>
+</head>
+ <body>
+    <script>
+        function ReverseString(str) {
+            if(!str || str.length < 2 || typeof str!== 'string') 
+            {
+                return 'Not valid'; 
+            }
+            const revArray = [];
+            const length = str.length - 1; 
+            for(let i = length; i >= 0; i--) 
+            {
+                revArray.push(str[i]);
+            }
+            return revArray.join('');
+        }
+        var name = prompt('Your name','');
+        document.write(ReverseString(name))
+    </script>
+ </body>
+</html>
