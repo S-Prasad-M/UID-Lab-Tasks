@@ -1,71 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <title>Science Expo</title>
+    </head>
     <style>
         body{
             background-image: linear-gradient(to bottom, rgb(68, 245, 68), rgb(69, 157, 238), black);
-            background-attachment: fixed;
         }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card 
+		{
+			background-image: linear-gradient(to bottom,white,rgb(69, 157, 238),rgb(68, 245, 68));
+			border: 2px solid black;
+			box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+			margin: 10px;
+			width: 300px;
+			height: 400px;
+			overflow: hidden;
+			position: relative;
+			cursor: pointer;
+		}
     </style>
-<body>
-    <form id="registration" target="_blank"  style = "align-items: center;">
-        <center>
+    <body>
+        <div class="container">
+            <img src="https://imgs.search.brave.com/EKmamelwOwcO16SNAtBStBRaoZNTw2m9sj-Mmlb7lg8/rs:fit:999:248:1/g:ce/aHR0cDovL2llb21z/b2NpZXR5Lm9yZy9p/bmRpYTIwMjEvd3At/Y29udGVudC91cGxv/YWRzLzIwMjEvMDEv/TG9nb19BTVJJVEEt/Mi5wbmc"
+            alt="amrita" style="margin-top: 20px; height: 200px; width: 50%;">
+        </div>
         <br>
-        <table>
-            <tr>
-                <td>First Name: <input type="text" class="fn" placeholder="First name "></td>
-                <td>Last Name: <input type="text" class="ln" placeholder="Last name "></td>
-            </tr>
-        </table>
-            <p>Email : <input type="email" class="email" placeholder="Email"></p>
-            <p> Mobile: <input type="tel" minlength="0" maxlength="10" class="mob" placeholder="Mobile number "></p>
-            <p>Gender: <input type="radio" class="male" value="Male" name="Male" placeholder="Male">
-                <label for="male">Male</label> <input type="radio" class="female" value="Female" name="Female" placeholder="Female"> <label for="female">Female</label></p>
-            <p>Date of Birth: <input type="date" name="dob" id="dob"></p>
-            <table>
-                <tr>
-                    <td>Address: </td>
-                    <td>
-                        <textarea name="add" id="add" cols="50" rows="2" maxlength="70" style="height: 62px; width: 335px;"></textarea>
-                    </tr>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td><input type="text" class="city" maxlength="25" placeholder="City"></td>
-                    <td><input type="text" class="pin" maxlength="8"placeholder="Pin code"></td>
-                </tr>
-                <tr>
-                    <td><input type="text" class="city" maxlength="25" placeholder="State"></td>
-                    <td><input type="text" class="pin" maxlength="8"placeholder="Country"></td>
-                </tr>
-            </table>
-            <p>Qualification: <select name="qua" id="qua"><option value="qua">Your Qualification:</option>
-                <option value="cse">Marine Engineering</option>
-                <option value="aero">Back-end Engineering</option>
-                <option value="cys">Front-end Engineering</option>
-                <option value="game">Civil Engineering</option></select></p>
-            
-            <table>
-                <th style="background-color:null;">
-                    Specialization: 
-                </th>
-                <tr>
-                    <td><input type="checkbox" name="spec" id="spec"> <label for="it">Information Technology</label></td>
-                    <td><input type="checkbox" name="spec" id="spec"> <label for="ca">Computer Architecture</label></td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" name="spec" id="spec"> <label for="cse">Computer science</label></td>
-                    <td><input type="checkbox" name="spec" id="spec"> <label for="tc">Tele Communication</label></td>
-                </tr>
-            </table>
+        <marquee style="font-size: 35;" scrollamount=10>
+            <p style="color:rgb(255, 0, 0);">
+                SCIENCE EXPO           
+            </p></marquee>
+        <br>
+        <div class="container">
+            <div class="card">
+                <center>
+                <p style="font-size: 30px;"><b>ABOUT</b></p>
+                </center>
+                <p style="font-size: 14px;">We are thrilled to present to you an exciting display of scientific wonders and discoveries. Our exhibition is a celebration of 
+                    human curiosity and ingenuity, as we showcase some of the most fascinating and groundbreaking scientific achievements of our time.
+                    <br><br>As you explore our exhibition, you will be transported into a world of awe-inspiring phenomena and cutting-edge technology. 
+                    From the mysteries of the cosmos to the intricacies of the human brain, our exhibits will take you on a journey through the wonders of science. 
+                    <br><br>We hope that you will leave our exhibition feeling inspired, curious, and excited about the endless possibilities of science.
+                    Thank you for joining us on this journey of discovery, and we hope that you enjoy our exhibition!
+                </p>
+            </div>
+            <div class="card">
+                <center>
+                <br>
+                <a href="Eventspage.html" style="font-size: 30px;"><b>EVENTS</b></a>
+                </center>
+                <p style="font-size: 20px; margin-left: 10px;">
+                    <br><br>
+                    ->> Biology Projects
+                    <br><br>
+                    ->> Chemistry Projects
+                    <br><br>
+                    ->> Physics Projects
+                    <br><br>
+                    Participate in events to win exotic cash prize and merchandise.
+                    
+                </p>
 
-            <p>Password: <input type="password" name="pass" id="pass"></p>
-            <input type="submit" value="Register">
-        </form>
-        <br>
-        <br>
-        <br>
-        <a href="Mainpage.html"><button>Return to Homepage</button></a>
-    </center>
-</body>
+            </div>
+            <div class="card">
+                <center>
+                    <br><br><br><br><br><br><br><br>
+                <a href="Formpage.html" style="font-size: 50px;"><b>REGISTER</b></p>
+                </center>
+            </div>
+        </div>
+    </body>
 </html>
