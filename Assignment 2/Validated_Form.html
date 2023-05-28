@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>UID ASSIGNMENT-2</title>
+        <script type="text/javascript">
+            function ValidateEmailAddress(mail) 
+            {
+                var at = mail.indexOf("@");
+                if(at < 1) return false;
+                var dot = mail.indexOf(".");
+                if(dot <= at + 2) return false;
+                if (dot === mail.length - 1) return false;
+                return true;
+            }       
+
+            function check()
+            {
+                var name = document.getElementById("name").value;
+                var rollno = document.getElementById("rollno").value;
+                var mail = document.getElementById("mail").value;
+                var phone = document.getElementById("phon").value;
+                if (name == ""){
+                    alert("Please fill your name. chinna vayasula peru vekkalaya unakku");
+                    return;
+                }
+                if (rollno == ""){
+                    alert("Please enter your roll number you");
+                    return;
+                }
+                if (!(ValidateEmailAddress(mail))){
+                    alert("Please enter mail ID in correct form dumbass...");
+                    return;
+                }
+                if (phone.length != 10){
+                    alert("Please give a valid phone number bruh...");
+                    return;
+                }
+
+
+
+            }
+        </script>
+    </head>    
+    <style>
+        body{
+            background-image: linear-gradient(to bottom,green, rgb(68, 245, 68), rgb(69, 157, 238), rgb(35, 0, 101));
+        }
+    </style>
+    <body>
+        <form>
+            <center>
+                <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20px;">
+                    NAME: <input type="text" id="name" placeholder="Enter your name" value=""></p>
+                <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20px;">
+                    ROLL NUMBER: <input type="text" id="rollno" placeholder="Enter your roll number" value=""></p>
+                <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20px;">
+                    QUALIFICATION: <select name="qua" id="qua"><option value="qua">Your Qualification:</option>
+                        <option value="cse">COMPUTER SCIENCE</option>
+                        <option value="ai">ARTIFICIAL INTELLIGENCE</option>
+                        <option value="cys">CYBER SECURITY</option>
+                        <option value="ee">ELECTRICAL ENGINEERING</option>
+                        <option value="me">MECHANICAL ENGINEERING</option>
+                        <option value="ce">CIVIL ENGINEERING</option></select></p>
+                <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20px;">
+                    GENDER:    Male <input type="radio" name="gender" value="male"> Female <input type="radio" name="gender"
+                    value="female"></p>
+                <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20px;">
+                    MAIL ID: <input type="email" id="mail" placeholder="abcd@mail.com" value=""></p>
+                <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20px;">
+                    ADDRESS: <textarea cols="50" rows="5" id="addr" value=""></textarea></p>
+                <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20px;">
+                    PHONE NUMBER: <input type="text" id="phon" placeholder="Enter your phone number" value=""></p>
+                <button type="button" onclick="check()">SUBMIT</button>
+            </center>
+        </form>
+    </body>
+</html>
